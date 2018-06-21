@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CalendarShannon</string>
+    <string name="add_event_details">Add Event Details</string>
+    <string name="start_time">Start Time</string>
+    <string name="am">am</string>
+    <string name="pm">pm</string>
+    <string name="end_time">End Time</string>
+    <string name="submit">Submit</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tues">Tues</string>
+    <string name="wed">Wed</string>
+    <string name="thurs">Thurs</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="april">April</string>
+</resources>

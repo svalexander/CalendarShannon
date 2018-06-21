@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nyc.c4q.shannonalexander_navarro.calendarshannon.MainActivity">
+
+    <TextView
+        android:id="@+id/april"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/april"
+        android:textColor="@color/colorAccent"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sun"
+        android:textColor="@color/colorTextDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/mon"
+        app:layout_constraintTop_toBottomOf="@id/april" />
+
+    <TextView
+        android:id="@+id/mon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/mon"
+        android:textColor="@color/colorTextDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/sun"
+        app:layout_constraintRight_toLeftOf="@id/tues"
+        app:layout_constraintTop_toBottomOf="@id/april" />
+
+    <TextView
+        android:id="@+id/tues"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tues"
+        android:textColor="@color/colorTextDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/mon"
+        app:layout_constraintRight_toLeftOf="@id/wed"
+        app:layout_constraintTop_toBottomOf="@id/april" />
+
+    <TextView
+        android:id="@+id/wed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/wed"
+        android:textColor="@color/colorTextDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/tues"
+        app:layout_constraintRight_toLeftOf="@id/thurs"
+        app:layout_constraintTop_toBottomOf="@id/april" />
+
+    <TextView
+        android:id="@+id/thurs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/thurs"
+        android:textColor="@color/colorTextDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/wed"
+        app:layout_constraintRight_toLeftOf="@id/fri"
+        app:layout_constraintTop_toBottomOf="@id/april" />
+
+    <TextView
+        android:id="@+id/fri"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/fri"
+        android:textColor="@color/colorTextDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/thurs"
+        app:layout_constraintRight_toLeftOf="@id/sat"
+        app:layout_constraintTop_toBottomOf="@id/april" />
+
+    <TextView
+        android:id="@+id/sat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sat"
+        android:textColor="@color/colorTextDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/fri"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/april" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7"
+        app:layout_constraintTop_toBottomOf="@id/mon">
+
+    </GridView>
+
+</android.support.constraint.ConstraintLayout>
