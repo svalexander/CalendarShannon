@@ -6,6 +6,7 @@ package nyc.c4q.shannonalexander_navarro.calendarshannon.models;
 
 public class Event {
 
+    //date here is circular
     private Date date;
     private String startTime;
     private String endTime;

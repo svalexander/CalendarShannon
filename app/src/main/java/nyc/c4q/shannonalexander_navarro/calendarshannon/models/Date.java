@@ -7,6 +7,15 @@ package nyc.c4q.shannonalexander_navarro.calendarshannon.models;
 public class Date {
 
     private String date;
+    private Event event;
+
+    public Event getEvent() {
+        return event;
+    }
+
+    public void setEvent(Event event) {
+        this.event = event;
+    }
 
     public String getDate() {
         return date;
