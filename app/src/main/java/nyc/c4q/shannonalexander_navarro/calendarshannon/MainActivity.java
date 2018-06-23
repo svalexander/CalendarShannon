@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         addDaysToList();
       //  initGridview();
         initRV();
+
     }
 
     private void addDaysToList() {
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         rv.setLayoutManager(new GridLayoutManager(getApplicationContext(), 7, GridLayoutManager.VERTICAL, false));
         calAdapter = new CalAdapter(days);
         rv.setAdapter(calAdapter);
+
     }
 
     private void initGridview() {
