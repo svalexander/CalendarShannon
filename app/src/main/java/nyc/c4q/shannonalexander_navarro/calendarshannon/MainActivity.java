@@ -23,9 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         addDaysToList();
-      //  initGridview();
         initRV();
-
     }
 
     private void addDaysToList() {
@@ -43,12 +41,4 @@ public class MainActivity extends AppCompatActivity {
         rv.setAdapter(calAdapter);
 
     }
-
-    private void initGridview() {
-//        GridView gridView = findViewById(R.id.gridview);
-//        CalendarAdapter calendarAdapter = new CalendarAdapter(days);
-//        gridView.setAdapter(calendarAdapter);
-    }
-
-    //create a 2d array of cells to represent the day
 }

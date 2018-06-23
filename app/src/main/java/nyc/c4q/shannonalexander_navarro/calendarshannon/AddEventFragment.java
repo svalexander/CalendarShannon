@@ -16,16 +16,14 @@ import android.widget.Button;
 public class AddEventFragment extends Fragment {
 
     private Button submitBtn;
-    int date;
+    private int date;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = LayoutInflater.from(container.getContext()).inflate(R.layout.add_event_fragment, container, false);
         initViews(root);
-
-        Bundle bundle = getArguments();
-        date = bundle.getInt("key");
+        getDayFromBundle();
         return root;
     }
 
@@ -38,6 +36,11 @@ public class AddEventFragment extends Fragment {
                 Log.d("date?", date + "");
             }
         });
+    }
+
+    private void getDayFromBundle() {
+        Bundle bundle = getArguments();
+        date = bundle.getInt("key");
     }
 
     private void closeFragment() {

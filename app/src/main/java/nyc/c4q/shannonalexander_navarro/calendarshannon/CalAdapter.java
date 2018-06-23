@@ -28,13 +28,11 @@ public class CalAdapter extends RecyclerView.Adapter<CalViewHolder> {
     @Override
     public CalViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View root = LayoutInflater.from(parent.getContext()).inflate(R.layout.date_item_view, parent, false);
-        //  launchForm(root);
         return new CalViewHolder(root);
     }
 
     @Override
     public void onBindViewHolder(CalViewHolder holder, int position) {
-
         Date date = dates.get(position);
         holder.bind(date);
         launchForm(holder.itemView, position);
@@ -55,7 +53,6 @@ public class CalAdapter extends RecyclerView.Adapter<CalViewHolder> {
                 addEventFragment.setArguments(bundle);
                 FragmentManager addEventFragTransaction = ((FragmentActivity) view.getContext()).getSupportFragmentManager();
                 addEventFragTransaction.beginTransaction().replace(R.id.frame_layout, addEventFragment).commit();
-
             }
         });
     }
