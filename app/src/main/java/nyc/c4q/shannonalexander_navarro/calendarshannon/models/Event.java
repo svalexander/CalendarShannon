@@ -7,16 +7,16 @@ package nyc.c4q.shannonalexander_navarro.calendarshannon.models;
 public class Event {
 
     //date here is circular
-    private Date date;
+    private int date;
     private String startTime;
     private String endTime;
     private String description;
 
-    public Date getDate() {
+    public int getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(int date) {
         this.date = date;
     }
 

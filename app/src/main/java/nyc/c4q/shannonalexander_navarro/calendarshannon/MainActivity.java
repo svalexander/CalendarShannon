@@ -10,6 +10,8 @@ import java.util.List;
 
 import nyc.c4q.shannonalexander_navarro.calendarshannon.models.Date;
 
+import static spark.Spark.get;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int NUM_DAYS = 28;
@@ -24,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
         addDaysToList();
         initRV();
+       // port(4567);
+        get("/hello", (req, res) -> "My message");
+        //http://localhost:4567/hello
     }
 
     private void addDaysToList() {
@@ -39,6 +44,5 @@ public class MainActivity extends AppCompatActivity {
         rv.setLayoutManager(new GridLayoutManager(getApplicationContext(), 7, GridLayoutManager.VERTICAL, false));
         calAdapter = new CalAdapter(days);
         rv.setAdapter(calAdapter);
-
     }
 }
