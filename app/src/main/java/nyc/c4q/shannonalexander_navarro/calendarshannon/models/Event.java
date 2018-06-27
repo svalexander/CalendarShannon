@@ -1,16 +1,32 @@
 package nyc.c4q.shannonalexander_navarro.calendarshannon.models;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+
 /**
  * Created by shannonalexander-navarro on 6/21/18.
  */
 
+@Entity(tableName = "event_table")
 public class Event {
 
     //date here is circular
+    @PrimaryKey
     private int date;
     private String startTime;
     private String endTime;
     private String description;
+
+    public Event(int date, String startTime, String endTime, String description) {
+        this.date = date;
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.description = description;
+    }
+
+    //need empty constructor or firebase
+    public Event() {
+    }
 
     public int getDate() {
         return date;
