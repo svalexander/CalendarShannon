@@ -3,12 +3,14 @@ package nyc.c4q.shannonalexander_navarro.calendarshannon.models;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
+import java.io.Serializable;
+
 /**
  * Created by shannonalexander-navarro on 6/21/18.
  */
 
 @Entity(tableName = "event_table")
-public class Event {
+public class Event implements Serializable {
 
     //date here is circular
     @PrimaryKey
